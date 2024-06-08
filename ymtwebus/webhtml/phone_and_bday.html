@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details - Page 2</title>
+    <link rel="stylesheet" href="../style/ex3.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="user-details">
+        <form action="user-details-page3.html" method="get" class="user-details" id="userDetailsForm"> <!-- Changed action to the next page -->
+            <!-- get email -->
+            <h2 class="title">Email:</h2>
+            <div class="input-fiel">
+                <i class="fas fa-envelope"></i>
+                <input type ="email" name="email" placeholder="example@example.com">
+            </div>
+            <!-- get password -->
+            <h3 class="title">Password:</h3>
+            <div class="input-fiel">
+                <i class="fas fa-lock"></i>
+                <input type ="password" name="password" placeholder="Enter your password">
+            </div>
+            <br>
+            <div class="button-container">
+            <!-- Next button -->
+            <button type="button" id="backButton">Back</button>
+            <!-- Back button -->
+            <button type="button" id="nextButton">Next</button>
+            </div>       
+        </form>
+    </div>
+   
+</div>
+
+<script>
+     // Add JavaScript to handle the back button click event
+     document.getElementById("nextButton").addEventListener("click", function() {
+        // Navigate to the first page when the button is clicked
+        window.location.href = "edu_and_username.html";
+    });
+
+    // Add JavaScript to handle the back button click event
+    document.getElementById("backButton").addEventListener("click", function() {
+        // Navigate to the first page when the button is clicked
+        window.location.href = "county_and_gender.html";
+    });
+</script>
+
+</body>
+</html>
